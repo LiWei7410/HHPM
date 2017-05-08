@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/testWeb/user" method="post">
+		<div>用户名：<input type="text" name="username"/></div><br/>
+		<div>密　码：<input type="password" name="userpwd"/></div><br/>
+		<div>
+			性　别：
+			<label for="n">
+				<input type="radio" id="n" name="sex" value="男"/>男
+			</label>
+			<label for="nv">
+				<input type="radio" id="nv" name="sex" value="女"/>女
+			</label>
+		</div>
+		<br/>
+		<div>
+			学　历：
+			<select name="xl">
+				<option>小学</option>
+				<option>初中</option>
+				<option>高中</option>
+				<option>中专</option>
+				<option>大专</option>
+				<option>本科</option>
+			</select>
+		
+		</div><br/>
+		<div>
+			爱　好：
+				<input type="checkbox" value="篮球" name="ah"/>篮球
+				<input type="checkbox" value="足球" name="ah"/>足球
+				<input type="checkbox" value="羽毛球球" name="ah"/>羽毛球
+		</div><br/>
+		<div>
+			简历<textarea rows="10" cols="5" name="jl" style="width:200px;"></textarea>
+		</div>
+		<div><input type="submit" value="注册"/></div>
+	</form>
+</body>
+</html>
